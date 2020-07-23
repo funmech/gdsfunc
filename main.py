@@ -3,6 +3,7 @@ import json
 
 from gclient.datastore import DSClient
 
+
 def hello(request):
     """A HTTP Cloud Function copied from GCP doc - https://github.com/GoogleCloudPlatform/python-docs-samples.
     Args:

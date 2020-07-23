@@ -15,6 +15,7 @@
 import flask
 import json
 import pytest
+import os
 
 import main
 
@@ -55,6 +56,7 @@ def test_hello_xss(app):
         assert '<script>' not in res
 
 
+@pytest.mark.skipif(os.getenv("GITHUB_ACTIONS") == "true", reason="Not able to setup emulator, so skip test_list")
 def test_list(app):
     # need datastore emulator
     with app.test_request_context():
