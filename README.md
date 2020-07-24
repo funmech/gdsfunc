@@ -33,6 +33,11 @@ If there are some existing data in *Datastore*, import it by:
         -d '{"input_url":"ds_backups/20200722-055802/20200722-055802.overall_export_metadata","entity_filter":{"kinds":[[MyKind]]}}'
 ```
 
+### Run locally
+```
+    env FLASK_APP=server.py flask run
+```
+
 ### Run test
 ```
     # start emulator in one terminal
