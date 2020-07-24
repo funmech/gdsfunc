@@ -1,0 +1,13 @@
+.gcloudignore
+.git
+.gitignore
+.github/
+README.md
+LICENSE
+venv
+__pycache__
+requirements-test.txt
+*_test.py
+tests/
+datastore_emulator
+ds_backups
