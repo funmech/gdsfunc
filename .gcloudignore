@@ -2,6 +2,7 @@
 .git
 .gitignore
 .github/
+.pytest_cache
 README.md
 LICENSE
 venv
@@ -11,3 +12,4 @@ requirements-test.txt
 tests/
 datastore_emulator
 ds_backups
+server.py

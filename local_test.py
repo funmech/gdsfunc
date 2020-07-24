@@ -1,5 +1,6 @@
 import server
 
+
 def test_index():
     server.app.testing = True
     client = server.app.test_client()

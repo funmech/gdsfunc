@@ -1,7 +1,7 @@
 import flask
 import json
 
-from gclient.datastore import DSClient
+from gclient import DSClient
 
 
 def hello(request):
@@ -28,4 +28,7 @@ def hello(request):
 
 def list(_):
     ds_client = DSClient()
-    return json.dumps(ds_client.list_kinds(False))
+    kinds = ds_client.list_kinds(False)
+    if len(kinds) > 0:
+        return json.dumps(ds_client.get_keys(kinds[0])), 200, {'content-type': 'application/json'}
+    return json.dumps([]), 200, {'content-type': 'application/json'}

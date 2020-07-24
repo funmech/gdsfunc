@@ -57,5 +57,5 @@ If there are some existing data in *Datastore*, import it by:
     # a basic checking function
     gcloud functions deploy hello --runtime=python37 --allow-unauthenticated --trigger-http --project a_project
     # a list function of entities in Datastore
-    gcloud functions deploy list --runtime=python37 --trigger-http --project a_project
+    gcloud functions deploy list --runtime=python37 --trigger-http --no-allow-unauthenticated --project a_project
 ```

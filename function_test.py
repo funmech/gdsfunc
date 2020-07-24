@@ -13,9 +13,7 @@
 # limitations under the License.
 
 import flask
-import json
 import pytest
-import os
 
 import main
 

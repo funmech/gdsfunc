@@ -11,6 +11,7 @@ import main
 def app():
     return flask.Flask(__name__)
 
+
 @pytest.mark.skipif(os.getenv("GITHUB_ACTIONS") == "true", reason="Not able to setup emulator, so skip test_list")
 def test_list(app):
     # need datastore emulator
